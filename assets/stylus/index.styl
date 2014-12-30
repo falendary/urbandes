@@ -1,0 +1,184 @@
+.generic
+	.blue-star
+	p
+		line-height 1.375
+		font-family DINPro-Regular
+		color #202020
+	a
+		color #72a9e6
+	a:hover
+		text-decoration none
+	h1
+		font-family DINPro-Medium
+		text-transform uppercase
+		font-size 1.375rem
+		margin 0 0 1.375rem 0
+	h2
+		margin 0 0 1rem 0
+	h3
+		font-family DINPro-Regular
+		margin 0 0 0.5rem 0
+	.note
+		font-family DINPro-Regular
+		span
+			color #0084c8
+	ol
+		counter-reset increment
+		list-style-type none
+		li::before
+			counter-increment increment
+			content counter(increment) "."
+			font-weight bold
+		li
+			margin 0 0 1.75rem 0
+			p
+				display inline
+				line-height 1.375
+		img
+			margin 2rem 0 0 0
+	ul
+		counter-reset increment
+		list-style-type none
+		li::before
+			content ''
+		li
+			padding 0 0 0 0.7rem
+			margin 0 0 0.2rem 0
+			background url(../images/marker.png) no-repeat 0 0.5rem
+		img
+			margin 2rem 0 0 0
+	.img-gallery
+		img
+			margin 0 1.5rem 0 0
+		img:last-child
+			margin 0	
+	.inner-slider
+		list-style-type none
+		margin 1rem 0 0 0
+		position relative
+		overflow hidden
+		width 50rem
+		ul
+			width 20000rem
+			position relative
+			margin 0 
+			padding 0
+			list-style none
+			li
+				background none
+				float left
+				padding 0
+				margin 0
+				line-height 0
+				img
+					margin 0
+	.control-bar
+		height 3.25rem
+		width 50rem
+		background #292929
+		overflow hidden
+		.image-tip
+			color #a3a4a8
+			float left
+			padding 1rem 0 0 1.125rem
+			width 39rem
+			box-sizing border-box
+		.jcarousel-control
+			height 3.25rem
+			width 3rem
+			float left
+			display block
+		.jcarousel-control.prev
+			background #3d3d3d url(../images/prev.png) no-repeat 50% 50%
+		.jcarousel-control.prev:hover
+			background #0084c8 url(../images/prev.png) no-repeat 50% 50%
+		.jcarousel-control.prev.inactive:hover
+			background #3d3d3d url(../images/prev.png) no-repeat 50% 50%
+		.jcarousel-control.next
+			float right
+			background #3d3d3d url(../images/next.png) no-repeat 50% 50%
+		.jcarousel-control.next:hover
+			background #0084c8 url(../images/next.png) no-repeat 50% 50%
+		.jcarousel-control.next.inactive:hover
+			background #3d3d3d url(../images/next.png) no-repeat 50% 50%
+		.image-counter
+			color #6c6d6f
+			float left
+			padding 1.25rem 0 0 0
+			text-align center
+			width 5rem
+			.current
+				color #fff
+				
+	div.bx-wrapper .bx-viewport
+		box-shadow none
+		-webkit-box-shadow none
+.bottom-block
+	border-top 1px solid #e0e0e0
+	padding 2.125rem 0 4.25rem 0
+	p
+		line-height 1.375
+		a
+			color #1782dd
+	.download-btns
+		overflow hidden
+		margin 2.625rem 0 0 0
+		li
+			list-style-type none
+			float left
+			margin 0 2.25rem 0 0
+			a
+				padding 1.5rem 0 0 .75rem
+				display block
+				width 18.5rem
+				height 6.5rem
+				box-sizing border-box
+				background url(../images/backgroundbtn.png) no-repeat
+				color #1782dd
+				text-decoration none
+				img
+					padding 0 .75rem 0 0
+					margin 0 .5rem 0 0 
+					border-right 1px solid #e2e2e2
+					float left
+				p
+					font-family DINPro-Bold
+					font-size .875rem
+			a:hover
+				background url(../images/backgroundbtn-hover.png) no-repeat
+		li:last-child
+			margin 0
+.tabs
+	list-style-type none
+	height 4.375rem
+	width 60rem
+	margin 1.875rem auto 3.5rem
+	border-bottom 1px solid #e0e0e0
+	li
+		float left
+		display block
+		box-sizing border-box
+		height 4.375rem
+		border-bottom 0 !important
+		padding 1.625rem 2.25rem 0 1.5rem
+		text-align center
+		margin 0 0 1px 0
+		a
+			color #202020
+
+	.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active
+		border 1px solid #e0e0e0
+		background url(../images/tab-arrow.png) no-repeat 0 50% #fff
+		margin-bottom -1px
+		padding-bottom 1px
+		position relative
+		top 1px	
+		a
+			color #0084c8
+			text-decoration none
+			font-family DINPro-Bold
+	.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active:first-child
+		border-left 0
+.tabs::after
+	content ''
+	clear both	
